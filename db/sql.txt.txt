@@ -1,0 +1,55 @@
+CREATE TABLE Purchase(
+Id int AUTO_INCREMENT PRIMARY KEY,
+    Supplier varchar(255),
+    Purchase_date date,
+    Creation_date date,
+    Medicine_name varchar(255),
+    Quantity int(10),
+    Price decimal(10,2),
+    Unit_name varchar(255),
+    Tax_percent int(10),
+    Tax_amount decimal(10,2),
+    Amount decimal(10,2),
+    Amount_with_tax decimal(10,2),
+    Sub_total decimal(10,2),
+    Due decimal(10,2),
+    Paid decimal(10,2),
+    Grand_total decimal(10,2)
+    
+)
+
+
+CREATE TABLE sales(
+Id int AUTO_INCREMENT PRIMARY KEY,
+    Customer_name varchar(255),
+    Sales_date date,
+    Creation_date date,
+    Sales_type varchar(255),
+    Medicine_name varchar(255),
+    Quantity int(10),
+    Price decimal(10,2),
+    Unit_name varchar(255),
+    Tax_percent int(10),
+    Tax_amount decimal(10,2),
+    Amount decimal(10,2),
+    Amount_with_tax decimal(10,2),
+    Sub_total decimal(10,2),
+    Due decimal(10,2),
+    Paid decimal(10,2),
+    Grand_total decimal(10,2)
+)
+
+CREATE TABLE product(
+    Id int AUTO_INCREMENT PRIMARY KEY,
+    	Brand_name varchar(255),
+        Category_name varchar(255),
+        Product_name varchar(255),
+        Purchase_price decimal(10,2),
+        Retails_price  decimal(10,2),
+        Whole_sale_price  decimal(10,2),
+        Unit_name varchar(255),
+        Quantity int(10),
+        Supplier varchar(255),
+        Expire_date date,
+        Picture text(255)
+    )
