@@ -80,6 +80,8 @@ Route::post('expenseItems',[ExpenseController::class, 'expenseItems']);
 Route::get('purchase',[PurchaseController::class, 'purchase']);
 Route::get('managepurchase',[PurchaseController::class, 'managepurchase']);
 Route::get('showMedicineDetails',[PurchaseController::class,'showMedicineDetails'])->name('showMedicineDetails');
+Route::get('stockadd/{id}',[PurchaseController::class,'stockadd'])->name('stockadd');
+Route::post('stockadds/{id}',[PurchaseController::class,'stockadds'])->name('stockadds');
 //End Purchase Controller
 
 //--------------------------------------------------------------------------------------------------------
